@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(167, 231, 167), rgb(195, 195, 125));  /*combination of two colours*/
+    width: 100vmin;   /* means vh and vw mese jo chota hoga wo vmin hoga and jo bda hoga wo vmax hoga */
+    height: 90vmin;
+    border: 2px solid green;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);  /*per unit width of grid is 1fr*/
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 170px;
+    font-size: 39px;
+    font-weight: bold;
+    /* border: 2px solid black;
+    padding: 1px 8px; */
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 52px;
+    right: 60px;
+    font-size: 39px;
+    font-weight: bold;
+    /* border: 2px solid black;
+    padding: 1px 8px; */
+}
+
+.head{
+    background: linear-gradient(rgb(6, 81, 29), rgb(228, 169, 228));
+    border: 2px solid purple;
+    border-radius: 9px;
+    transform: scale(1.02);
+
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(yellow, purple);
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
